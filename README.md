@@ -14,3 +14,7 @@ Key difference:
 - Map has size property
 - Map does not allow duplicate keys
 
+```js
+const map = new Map();
+```
+
