@@ -18,7 +18,7 @@ Key difference:
 const map = new Map();
 ```
 
-### set
+### Set key-value pair: set
 
 ```js
 const meals = new Map();
@@ -28,16 +28,22 @@ meals.set("🍔", "dinner");
 meals.set("🎂", "dessert");
 ```
 
-### get 
+### Get key-value pair: get 
 
 ```js
 const cookie = meals.get('🍪')
 const donut = meals.get('🍩') // undefined
 ```
 
-### has
+### Has key a value: has
 
 ```js
 const cookie = meals.has('🍪') // true
 const donut = meals.has('🍩') // false
+```
+
+### Map size property
+
+```js
+const mapSize = meals.size; // 4
 ```

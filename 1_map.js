@@ -21,3 +21,7 @@ console.log(`Has 4? ${has4}`);
 
 const has8 = saturday.has(8);
 console.log(`Has 8? ${has8}`);
+
+// map size
+const saturdaySize = saturday.size;
+console.log(`Map size: ${saturdaySize}`);
