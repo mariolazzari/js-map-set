@@ -34,3 +34,10 @@ meals.set("🎂", "dessert");
 const cookie = meals.get('🍪')
 const donut = meals.get('🍩') // undefined
 ```
+
+### has
+
+```js
+const cookie = meals.has('🍪') // true
+const donut = meals.has('🍩') // false
+```
