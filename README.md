@@ -18,3 +18,19 @@ Key difference:
 const map = new Map();
 ```
 
+### set
+
+```js
+const meals = new Map();
+meals.set("🍎", "breakfast");
+meals.set("🍕", "lunch");
+meals.set("🍔", "dinner");
+meals.set("🎂", "dessert");
+```
+
+### get 
+
+```js
+const cookie = meals.get('🍪')
+const donut = meals.get('🍩') // undefined
+```
