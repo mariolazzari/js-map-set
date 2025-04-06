@@ -35,3 +35,29 @@ console.log(`Deleted 33? ${isDeleted}`); // false
 // The clear method is used to remove all key-value pairs from the map
 saturday.clear(); // remove all key-value pairs
 console.log(`Map size: ${saturday.size}`); // 0
+
+// restore values
+saturday.set(8, "Walk the dog");
+saturday.set(12, "Lunch");
+saturday.set(3, "Wathch a movie");
+
+// keys and values
+const keys = saturday.keys();
+const firstKey = keys.next();
+console.log(`First key: ${firstKey}`); // 8
+
+console.log("Keys:");
+for (const key of keys) {
+  console.log(key);
+}
+
+const values = saturday.values();
+values.next();
+
+const secondValue = values.next().value;
+console.log(`Second value: ${secondValue}`); // Lunch
+
+console.log("Values:");
+for (const value of values) {
+  console.log(value);
+}

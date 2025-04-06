@@ -55,3 +55,15 @@ let isDeleted = meals.delete('🍩') // true
 isDeleted = meals.delete('♦️') // false
 meals.clear() // remove all key-value pairs
 ```
+
+### Iterators: keys and values
+
+```js
+// keys ordered list
+const keys = meals.keys() 
+const firstkey = keys.next().value
+
+// values ordered list
+const values = meals.values()
+const firstVal = values.next().value
+```
