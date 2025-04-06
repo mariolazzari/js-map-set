@@ -25,3 +25,13 @@ console.log(`Has 8? ${has8}`);
 // map size
 const saturdaySize = saturday.size;
 console.log(`Map size: ${saturdaySize}`);
+
+// The delete method is used to remove a key-value pair from the map
+let isDeleted = saturday.delete(3); // true
+console.log(`Deleted 3? ${isDeleted}`); // true
+isDeleted = saturday.delete(33); // false
+console.log(`Deleted 33? ${isDeleted}`); // false
+
+// The clear method is used to remove all key-value pairs from the map
+saturday.clear(); // remove all key-value pairs
+console.log(`Map size: ${saturday.size}`); // 0

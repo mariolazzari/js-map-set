@@ -47,3 +47,11 @@ const donut = meals.has('🍩') // false
 ```js
 const mapSize = meals.size; // 4
 ```
+
+### Remove key-value pairs: clear and delete
+
+```js
+let isDeleted = meals.delete('🍩') // true
+isDeleted = meals.delete('♦️') // false
+meals.clear() // remove all key-value pairs
+```
