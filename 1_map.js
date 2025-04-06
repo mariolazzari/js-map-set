@@ -70,3 +70,12 @@ entries.next();
 entries.next();
 const thirdEntry = entries.next().value;
 console.log(`Third entry: ${thirdEntry}`); // [3, 'Wathch a movie']
+
+// forEach
+console.log("forEach");
+saturday.forEach((value, key) => {
+  console.log(`Key: ${key}, Value: ${value}`);
+  if (key === 12) {
+    console.log("Lunch time!");
+  }
+});

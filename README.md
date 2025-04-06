@@ -67,3 +67,19 @@ const firstkey = keys.next().value
 const values = meals.values()
 const firstVal = values.next().value
 ```
+
+### Iterators: values
+
+```js
+// values retun key-value pairs collection
+const entries = meals.entries()
+const first = entries.next().value
+```
+
+### forEach: map.forEach(value, key, map, this)
+
+```js
+meals.forEach((value, key) =>{
+    console.log(`Key ${key} value: ${value}`)
+})
+```
