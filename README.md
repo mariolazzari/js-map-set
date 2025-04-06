@@ -103,3 +103,33 @@ const result = Map.groupBy(inventory, ({ quantity }) =>
 console.log(result.get(restock));
 // [{ name: "bananas", type: "fruit", quantity: 5 }]
 ```
+
+## Weak Maps
+
+Like Maps:
+- key-value pairs
+- set, get, delete, has
+
+Unlike Maps:
+- key must be an object
+- does not have iterator and size
+  
+````js
+const weakMap = new WeakMap()
+const obj = { name: 'John' };
+const obj2 = { name: 'Jane' };
+
+weakMap.set(obj, 'john');
+weakMap.set(obj2, 'jane');
+
+weak.get(obj); // john
+weak.get(obj2); // jane
+weak.has(obj); // true
+weak.has(obj2); // true
+
+weak.size; // undefined
+
+weak.delete(obj); // remove obj from weak map
+weak.has(obj); // false
+weak.has(obj2); // true
+```
