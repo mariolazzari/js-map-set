@@ -79,3 +79,19 @@ saturday.forEach((value, key) => {
     console.log("Lunch time!");
   }
 });
+
+// grouping
+const inventories = [
+  { name: "apples", type: "fruit", quantity: 2 },
+  { name: "flour", type: "baking", quantity: 5 },
+  { name: "bananas", type: "fruit", quantity: 3 },
+  { name: "sugar", type: "baking", quantity: 4 },
+  { name: "oranges", type: "fruit", quantity: 5 },
+];
+
+const res = Map.groupBy(inventories, ({ quantity }) =>
+  quantity <= 3 ? "low" : quantity <= 5 ? "medium" : "high"
+);
+console.log("Inventory", res);
+const lows = res.get("low");
+console.log("Low:", lows);
