@@ -101,7 +101,6 @@ const result = Map.groupBy(inventory, ({ quantity }) =>
   quantity < 6 ? restock : sufficient,
 );
 console.log(result.get(restock));
-// [{ name: "bananas", type: "fruit", quantity: 5 }]
 ```
 
 ## Weak Maps
@@ -114,7 +113,7 @@ Unlike Maps:
 - key must be an object
 - does not have iterator and size
   
-````js
+```js
 const weakMap = new WeakMap()
 const obj = { name: 'John' };
 const obj2 = { name: 'Jane' };
@@ -133,3 +132,7 @@ weak.delete(obj); // remove obj from weak map
 weak.has(obj); // false
 weak.has(obj2); // true
 ```
+
+## Sets
+
+Collections of unique values
