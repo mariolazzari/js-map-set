@@ -61,3 +61,12 @@ console.log("Values:");
 for (const value of values) {
   console.log(value);
 }
+
+// entries
+const entries = saturday.entries();
+console.log("entries:", entries);
+
+entries.next();
+entries.next();
+const thirdEntry = entries.next().value;
+console.log(`Third entry: ${thirdEntry}`); // [3, 'Wathch a movie']
