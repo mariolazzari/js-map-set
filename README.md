@@ -136,3 +136,23 @@ weak.has(obj2); // true
 ## Sets
 
 Collections of unique values
+
+- No duplicates
+- Any type of value
+- Size property
+
+```js
+const invites = new Set()
+```
+
+### add
+
+```js
+invites.add("mario")
+    .add("Maria")
+    .add("Mariarosa)
+    .add("Roberto")
+    .add("mario") // ignored
+```
+
+### has
