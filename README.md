@@ -161,3 +161,9 @@ invites.add("mario")
 let invited = invites.has("Mario") // true
 invited = invites.has("mike") // false
 ```
+
+### size
+
+```js
+const inviteSize = meals.size
+```

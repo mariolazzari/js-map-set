@@ -19,3 +19,7 @@ console.log("Has mint choccolate chip?", hasMintChocChip);
 
 const hasCoffee = iceCreams.has("Coffee");
 console.log("Has coffee?", hasCoffee);
+
+// size
+const iceCreamsSize = iceCreams.size;
+console.log("Ice creams size:", iceCreamsSize);
