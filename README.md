@@ -156,3 +156,8 @@ invites.add("mario")
 ```
 
 ### has
+
+```js
+let invited = invites.has("Mario") // true
+invited = invites.has("mike") // false
+```

@@ -12,3 +12,10 @@ iceCreams
   .add("Coffee");
 
 console.log("Ice creams:", iceCreams);
+
+// has
+const hasMintChocChip = iceCreams.has("mint choccolate chip");
+console.log("Has mint choccolate chip?", hasMintChocChip);
+
+const hasCoffee = iceCreams.has("Coffee");
+console.log("Has coffee?", hasCoffee);
