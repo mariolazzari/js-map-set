@@ -23,3 +23,13 @@ console.log("Has coffee?", hasCoffee);
 // size
 const iceCreamsSize = iceCreams.size;
 console.log("Ice creams size:", iceCreamsSize);
+
+// delete vanilla
+iceCreams.delete("Vanilla");
+console.log("Ice creams after deleting vanilla:", iceCreams);
+console.log("Ice creams size after deleting vanilla:", iceCreams.size);
+
+// clear
+iceCreams.clear();
+console.log("Ice creams after clearing:", iceCreams);
+console.log("Ice creams size after clearing:", iceCreams.size);

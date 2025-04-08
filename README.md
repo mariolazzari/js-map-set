@@ -167,3 +167,12 @@ invited = invites.has("mike") // false
 ```js
 const inviteSize = meals.size
 ```
+
+### delete & clear
+
+```js
+// delete element
+invites.delete("Mario")
+// delete all elements
+invites.clear()
+```
