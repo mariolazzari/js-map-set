@@ -176,3 +176,10 @@ invites.delete("Mario")
 // delete all elements
 invites.clear()
 ```
+
+### Iterator: values
+
+```js
+const values = invites.values()
+const first = values.next().value
+```

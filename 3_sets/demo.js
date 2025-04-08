@@ -33,3 +33,19 @@ console.log("Ice creams size after deleting vanilla:", iceCreams.size);
 iceCreams.clear();
 console.log("Ice creams after clearing:", iceCreams);
 console.log("Ice creams size after clearing:", iceCreams.size);
+
+// restore iceCrems
+iceCreams
+  .add("Vanilla")
+  .add("Chocolate")
+  .add("Strawberry")
+  .add("Mint")
+  .add("Pistachio")
+  .add("Coffee");
+
+// values
+const iceCreamsValues = iceCreams.values();
+const firstValue = iceCreamsValues.next().value;
+console.log("First value:", firstValue);
+const secondValue = iceCreamsValues.next().value;
+console.log("Second value:", secondValue);
