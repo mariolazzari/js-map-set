@@ -197,4 +197,19 @@ const first = entries.next().value
 meals.forEach(value1, value2, set, this)
 ```
 
+## Weak sets
+
+Like sets:
+
+- Unique values
+- add, delete and has
+  
+Unlike sets:
+
+- values must be objects
+- no iterators
+
+```js
+const weakSet = new WeakSet()
+```
 
