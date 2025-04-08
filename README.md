@@ -183,3 +183,10 @@ invites.clear()
 const values = invites.values()
 const first = values.next().value
 ```
+
+### entries
+
+```js
+const entries = invities.entries()
+const first = entries.next().value
+```

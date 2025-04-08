@@ -49,3 +49,8 @@ const firstValue = iceCreamsValues.next().value;
 console.log("First value:", firstValue);
 const secondValue = iceCreamsValues.next().value;
 console.log("Second value:", secondValue);
+
+// entries
+const iceCreamsEntries = iceCreams.entries();
+const firstEntry = iceCreamsEntries.next().value;
+console.log("First entry:", firstEntry);
