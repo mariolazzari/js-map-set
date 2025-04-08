@@ -190,3 +190,11 @@ const first = values.next().value
 const entries = invities.entries()
 const first = entries.next().value
 ```
+
+### forEach
+
+```sh
+meals.forEach(value1, value2, set, this)
+```
+
+

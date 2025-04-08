@@ -54,3 +54,10 @@ console.log("Second value:", secondValue);
 const iceCreamsEntries = iceCreams.entries();
 const firstEntry = iceCreamsEntries.next().value;
 console.log("First entry:", firstEntry);
+
+// forEach
+iceCreams.forEach(iceCream => {
+  if (iceCream !== "Vanilla") {
+    console.log("Ice cream:", iceCream);
+  }
+});
